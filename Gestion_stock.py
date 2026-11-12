@@ -1,8 +1,9 @@
-stock_productos={'enlatados':[],'frutas':[],'congelados':[],'panaderia':[]}
-stock_cantidades={'enlatados':[],'frutas':[],'congelados':[],'panaderia':[]}
+stock_productos={'enlatados':["Atun", "Salsa de tomate"],'frutas':["Manzana", "Pera"],'congelados':["Carne", "Pollo"],'panaderia':["Pan", "Tortas"]}
+stock_cantidades={'enlatados':[5, 10],'frutas':[2, 8],'congelados':[8, 5],'panaderia':[10, 2]}
 def inicializar():
-    for categ in stock_productos:
+    for categoria in stock_productos:
         stock_productos=[]
+    for categoria in stock_cantidades:
         stock_cantidades=[]
 def cargar_stock():
     categ=input("categoria: ")
